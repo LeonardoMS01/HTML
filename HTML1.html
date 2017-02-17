@@ -1,0 +1,35 @@
+<html>
+
+	<head>
+		<title> Cadastro de usuario</title>	
+		
+		<script>
+			function trocar(){
+				var nome = document.getElementById("txtNome").value;	
+				txtNome.value = document.getElementById("txtSenha").value;
+				txtSenha.value = nome;
+			}
+			
+			
+		
+		</script>
+	</head>
+
+	<body>
+
+		<form>
+			<label id="lblUsername"> Nome </label>
+			<input type="text" value="" name="txtNome" id="txtNome"> 
+			
+			<label id="lblUsername"> Senha </label>
+			<input type="text" value="" name="txtSenha" id="txtSenha"/> 
+			<input type="submit" value="Salvar"/>
+			
+			<input type="button" onclick="trocar()" value="Trocar"/>
+		</form>
+
+	</body>
+	
+	
+
+</html>
